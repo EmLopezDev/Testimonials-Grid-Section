@@ -1,0 +1,68 @@
+@use "../util/" as u;
+
+:root {
+    --font-weight-medium: 500;
+    --font-weight-semi-bold: 600;
+}
+
+.text__preset--1,
+.text__preset--2,
+.text__preset--3,
+.text__preset--4 {
+    font-stretch: semi-condensed;
+    letter-spacing: 0;
+}
+
+.text__preset--2,
+.text__preset--3,
+.text__preset--4 {
+    font-weight: var(--font-weight-medium);
+}
+
+.text__preset--2,
+.text__preset--3 {
+    font-size: u.rem(13);
+}
+
+.text__preset--2,
+.text__preset--4 {
+    line-height: 110%;
+}
+
+.text__preset--1 {
+    font-size: u.rem(20);
+    font-weight: var(--font-weight-semi-bold);
+    line-height: 120%;
+}
+
+.text__preset--3 {
+    line-height: 140%;
+}
+
+.text__preset--4 {
+    font-size: u.rem(11);
+}
+
+.text__white {
+    color: var(--color-white);
+}
+
+.text__purple {
+    color: var(--color-purple-50);
+}
+
+.text__grey--lighter {
+    color: var(--color-grey-100);
+}
+
+.text__grey--light {
+    color: var(--color-grey-200);
+}
+
+.text__grey--dark {
+    color: var(--color-grey-400);
+}
+
+.text__grey--darker {
+    color: var(--color-grey-500);
+}

@@ -1,0 +1,29 @@
+@use "../util/" as u;
+
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    width: 100%;
+    background-color: var(--color-bg);
+    font-family: "Barlow", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: u.rem(73) u.rem(35);
+}
+
+main {
+    max-width: u.rem(1114);
+    width: 100%;
+    display: grid;
+    gap: u.rem(24);
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: 1fr;
+}

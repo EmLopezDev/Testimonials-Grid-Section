@@ -10,34 +10,43 @@
             sizes="32x32"
             href="./images/favicon-32x32.png"
         />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="./dist/style.css" />
 
         <title>Frontend Mentor | [Challenge Name Here]</title>
-        <style>
-            .attribution {
-                font-size: 11px;
-                text-align: center;
-            }
-            .attribution a {
-                color: hsl(228, 45%, 44%);
-            }
-        </style>
     </head>
     <body>
         <main>
-            <article>
-                <div>
-                    <img src="./images/image-daniel.jpg" alt="daniel" />
-                    <h3>
+            <article class="card card__one">
+                <img
+                    class="card__one--quotes"
+                    src="./images/bg-pattern-quotation.svg"
+                    alt="quotation marks"
+                />
+                <div class="card__title">
+                    <img
+                        class="card__img card__img--light-purple"
+                        src="./images/image-daniel.jpg"
+                        alt="daniel"
+                    />
+                    <h3 class="text__preset--2 text__white">
                         Daniel Clifford <br />
-                        <span>Verified Graduate</span>
+                        <span class="text__preset--4 text__purple"
+                            >Verified Graduate</span
+                        >
                     </h3>
                 </div>
-                <p>
+                <p class="text__preset--1 text__white absolute">
                     I received a job offer mid-course, and the subjects I
                     learned were current, if not more so, in the company I
                     joined. I honestly feel I got every penny’s worth.
                 </p>
-                <p>
+                <p class="text__preset--3 text__purple">
                     “I was an EMT for many years before I joined the bootcamp.
                     I’ve been looking to make a transition and have heard some
                     people who had an amazing experience here. I signed up for
@@ -48,50 +57,70 @@
                     Software Engineer at a VR startup. ”
                 </p>
             </article>
-            <article>
-                <div>
-                    <img src="./images/image-jonathan.jpg" alt="Jonathan" />
-                    <h3>
+            <article class="card card__two">
+                <div class="card__title">
+                    <img
+                        class="card__img"
+                        src="./images/image-jonathan.jpg"
+                        alt="Jonathan"
+                    />
+                    <h3 class="text__preset--2 text__white">
                         Jonathan Walters<br />
-                        <span>Verified Graduate</span>
+                        <span class="text__preset--4 text__grey--lighter"
+                            >Verified Graduate</span
+                        >
                     </h3>
                 </div>
-                <p>The team was very supportive and kept me motivated</p>
-                <p>
+                <p class="text__preset--1 text__white">
+                    The team was very supportive and kept me motivated
+                </p>
+                <p class="text__preset--3 text__grey--lighter">
                     “I started as a total newbie with virtually no coding
                     skills. I now work as a mobile engineer for a big company.
                     This was one of the best investments I’ve made in myself.”
                 </p>
             </article>
-            <article>
-                <div>
-                    <img src="./images/image-jeanette.jpg" alt="Jeanette" />
-                    <h3>
+            <article class="card card__three">
+                <div class="card__title">
+                    <img
+                        class="card__img"
+                        src="./images/image-jeanette.jpg"
+                        alt="Jeanette"
+                    />
+                    <h3 class="text__preset--2 text__grey--darker">
                         Jeanette Harmon<br />
-                        <span>Verified Graduate</span>
+                        <span class="text__preset--4 text__grey--dark"
+                            >Verified Graduate</span
+                        >
                     </h3>
                 </div>
-                <p>An overall wonderful and rewarding experience</p>
-                <p>
+                <p class="text__preset--1 text__grey--darker">
+                    An overall wonderful and rewarding experience
+                </p>
+                <p class="text__preset--3 text__grey--dark">
                     “Thank you for the wonderful experience! I now have a job I
                     really enjoy, and make a good living while doing something I
                     love.”
                 </p>
             </article>
-            <article>
-                <div>
-                    <img src="./images/image-patrick.jpg" alt="Patrick" />
-                    <h3>
+            <article class="card card__four">
+                <div class="card__title">
+                    <img
+                        class="card__img card__img--dark-purple"
+                        src="./images/image-patrick.jpg"
+                        alt="Patrick"
+                    />
+                    <h3 class="text__preset--2 text__white">
                         Patrick Abrams<br />
-                        <span>Verified Graduate</span>
+                        <span class="text__preset--4">Verified Graduate</span>
                     </h3>
                 </div>
-                <p>
+                <p class="text__preset--1 text__grey--light">
                     Awesome teaching support from TAs who did the bootcamp
                     themselves. Getting guidance from them and learning from
                     their experiences was easy.
                 </p>
-                <p>
+                <p class="text__preset--3 text__grey--lighter">
                     “The staff seem genuinely concerned about my progress which
                     I find really refreshing. The program gave me the confidence
                     necessary to be able to go out in the world and present
@@ -100,16 +129,24 @@
                     an incredible community of smart and amazing people.”
                 </p>
             </article>
-            <article>
-                <div>
-                    <img src="./images/image-kira.jpg" alt="Kira" />
-                    <h3>
+            <article class="card card__five">
+                <div class="card__title">
+                    <img
+                        class="card__img"
+                        src="./images/image-kira.jpg"
+                        alt="Kira"
+                    />
+                    <h3 class="text__preset--2 text__grey--darker">
                         Kira Whittle<br />
-                        <span>Verified Graduate</span>
+                        <span class="text__preset--4 text__grey--dark"
+                            >Verified Graduate</span
+                        >
                     </h3>
                 </div>
-                <p>Such a life-changing experience. Highly recommended!</p>
-                <p>
+                <p class="text__preset--1 text__grey--darker">
+                    Such a life-changing experience. Highly recommended!
+                </p>
+                <p class="text__preset--3 text__grey--dark">
                     “Before joining the bootcamp, I’ve never written a line of
                     code. I needed some structure from professionals who can
                     help me learn programming step by step. I was encouraged to
@@ -126,14 +163,5 @@
                 </p>
             </article>
         </main>
-
-        <footer class="attribution">
-            Challenge by
-            <a
-                href="https://www.frontendmentor.io?ref=challenge"
-                target="_blank"
-                >Frontend Mentor</a
-            >. Coded by <a href="#">Your Name Here</a>.
-        </footer>
     </body>
 </html>

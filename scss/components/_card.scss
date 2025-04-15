@@ -1,0 +1,65 @@
+@use "../util/" as u;
+
+.card {
+    padding: u.rem(32);
+    border-radius: u.rem(8);
+    box-shadow: u.rem(40) u.rem(60) u.rem(50) u.rem(-47)
+        rgba(72, 85, 106, 24.74%);
+
+    & div + p {
+        margin-bottom: u.rem(16);
+    }
+
+    &__one {
+        background-color: var(--color-purple-500);
+        position: relative;
+
+        &--quotes {
+            position: absolute;
+            top: 0;
+            right: 15%;
+        }
+
+        & .absolute {
+            position: relative;
+            z-index: 1;
+        }
+    }
+
+    &__two {
+        background-color: var(--color-grey-500);
+    }
+
+    &__three {
+        background-color: var(--color-white);
+    }
+
+    &__four {
+        background-color: var(--color-dark-blue);
+    }
+
+    &__five {
+        background-color: var(--color-white);
+    }
+
+    &__title {
+        display: flex;
+        align-items: center;
+        margin-bottom: u.rem(16);
+    }
+
+    &__img {
+        width: u.rem(28);
+        height: u.rem(28);
+        margin-right: u.rem(16);
+        border-radius: 50%;
+
+        &--light-purple {
+            border: u.rem(2) solid var(--color-purple-300);
+        }
+
+        &--dark-purple {
+            border: u.rem(2) solid var(--color-purple-500);
+        }
+    }
+}
