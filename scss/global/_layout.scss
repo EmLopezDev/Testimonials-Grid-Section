@@ -24,6 +24,14 @@ main {
     width: 100%;
     display: grid;
     gap: u.rem(24);
-    grid-template-columns: 2fr 1fr 1fr;
-    grid-template-rows: 1fr;
+    grid-template-columns: repeat(auto-fill, minmax(u.rem(255), 1fr));
+
+    @include u.breakpoint(medium) {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    @include u.breakpoint(small) {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
 }
